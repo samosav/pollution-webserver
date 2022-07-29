@@ -1,13 +1,11 @@
 from datetime import datetime
-
 from flask import Flask, request
 
 app = Flask(__name__)
 
-
 app.route('/')
 def index():
-    return 'OK'
+    return ''<h1>This is Zappa!</h1>''
 
 @app.route('/update')
 def update_data():
@@ -20,4 +18,3 @@ def update_data():
 # We only need this for local development.
 if __name__ == '__main__':
    app.run(host='0.0.0.0')
-
